@@ -1,0 +1,17 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+buildscript {
+    ext.kotlin_version = '1.1.1'
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.github.hotchemi:gradle-subplugin-example:$kotlin_version"
+    }
+}
