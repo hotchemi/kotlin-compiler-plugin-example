@@ -12,6 +12,6 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.github.hotchemi:gradle-subplugin-example:$kotlin_version"
+//        classpath "com.github.hotchemi:gradle-subplugin-example:$kotlin_version"
     }
 }
