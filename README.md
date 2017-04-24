@@ -1,23 +1,16 @@
 # kotlin-gradle-subplugin-example
 
+**This sample only works with Kotlin 1.0.6!**
+
 ```bash
-# comment out classpath "com.github.hotchemi:gradle-subplugin-example:$kotlin_version"
 $ ./gradlew clean plugin:uploadArchives
 $ ./gradlew clean example:test
 ```
 
-and you'll get:
+if you update Kotlin version to 1.0.7 or up, you'll get error below:
 
 ```bash
-ExampleKotlinGradleSubplugin loaded
-ExampleKotlinGradleSubplugin loaded
-ExampleKotlinGradleSubplugin loaded
-ExampleKotlinGradleSubplugin loaded
-:example:clean
-:plugins:clean UP-TO-DATE
-:example:compileKotlin
-Using kotlin incremental compilation
-e: java.util.ServiceConfigurationError: org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar: Error reading configuration file
+error: java.util.ServiceConfigurationError: org.jetbrains.kotlin.compiler.plugin.ComponentRegistrar: Error reading configuration file
         at java.util.ServiceLoader.fail(ServiceLoader.java:232)
         at java.util.ServiceLoader.parse(ServiceLoader.java:309)
         at java.util.ServiceLoader.access$200(ServiceLoader.java:185)
@@ -75,17 +68,4 @@ Caused by: java.io.FileNotFoundException: JAR entry META-INF/services/org.jetbra
         at java.net.URL.openStream(URL.java:1045)
         at java.util.ServiceLoader.parse(ServiceLoader.java:304)
         ... 49 more
-
-:example:compileKotlin FAILED
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':example:compileKotlin'.
-> Compilation error. See log for more details
-
-* Try:
-Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
-
-BUILD FAILED
 ```
