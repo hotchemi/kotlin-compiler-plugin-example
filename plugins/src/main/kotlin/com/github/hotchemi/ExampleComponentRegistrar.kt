@@ -1,4 +1,4 @@
-package com.github.hotchemi.powerassert
+package com.github.hotchemi
 
 import org.jetbrains.kotlin.cli.common.CLIConfigurationKeys
 import org.jetbrains.kotlin.cli.common.messages.CompilerMessageLocation

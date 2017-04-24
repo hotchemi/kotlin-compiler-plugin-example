@@ -1,5 +1,6 @@
-package powerassert.example
+package example
 
+import example.Sample
 import org.junit.Test
 
 class SampleTest {

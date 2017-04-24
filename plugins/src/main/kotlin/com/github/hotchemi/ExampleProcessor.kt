@@ -1,7 +1,7 @@
-package com.github.hotchemi.powerassert
+package com.github.hotchemi
 
-import com.github.hotchemi.powerassert.ExampleKotlinGradleSubplugin.Companion.ANNOTATIONS_ARG_NAME
-import com.github.hotchemi.powerassert.ExampleKotlinGradleSubplugin.Companion.COMPILER_PLUGIN_ID
+import com.github.hotchemi.ExampleKotlinGradleSubplugin.Companion.ANNOTATIONS_ARG_NAME
+import com.github.hotchemi.ExampleKotlinGradleSubplugin.Companion.COMPILER_PLUGIN_ID
 import org.jetbrains.kotlin.compiler.plugin.CliOption
 import org.jetbrains.kotlin.compiler.plugin.CliOptionProcessingException
 import org.jetbrains.kotlin.compiler.plugin.CommandLineProcessor

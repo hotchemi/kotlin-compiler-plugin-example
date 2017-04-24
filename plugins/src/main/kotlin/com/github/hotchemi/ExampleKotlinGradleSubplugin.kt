@@ -1,4 +1,4 @@
-package com.github.hotchemi.powerassert
+package com.github.hotchemi
 
 import org.gradle.api.Project
 import org.gradle.api.tasks.SourceSet
