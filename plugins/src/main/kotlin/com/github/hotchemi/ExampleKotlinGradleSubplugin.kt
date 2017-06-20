@@ -10,7 +10,7 @@ class ExampleKotlinGradleSubplugin : KotlinGradleSubplugin<AbstractCompile> {
     companion object {
         val ANNOTATIONS_ARG_NAME = "annotation"
         val GROUP_NAME = "com.github.hotchemi"
-        val ARTIFACT_NAME = "gradle-subplugin-example"
+        val ARTIFACT_NAME = "gradle-compile-plugin-example"
         val COMPILER_PLUGIN_ID = "com.github.hotchemi.gradle.subplugin.example"
     }
 

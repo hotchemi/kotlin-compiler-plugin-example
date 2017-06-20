@@ -9,7 +9,7 @@ dependencies {
 }
 
 group = "com.github.hotchemi"
-archivesBaseName = "gradle-subplugin-example"
+archivesBaseName = "gradle-compile-plugin-example"
 version = "$kotlin_version"
 uploadArchives {
     repositories {
