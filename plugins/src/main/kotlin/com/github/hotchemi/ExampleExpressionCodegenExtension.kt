@@ -10,6 +10,9 @@ import org.jetbrains.kotlin.resolve.calls.model.ResolvedCall
 class ExampleCodegenExtension : ExpressionCodegenExtension {
     override fun applyFunction(receiver: StackValue, resolvedCall: ResolvedCall<*>, c: ExpressionCodegenExtension.Context): StackValue? {
         println("applyFunction")
+        val calleeExpression = resolvedCall.call.calleeExpression
+        val visitor = ExampleVisitor()
+        calleeExpression?.acceptChildren(visitor)
         return null
     }
 
